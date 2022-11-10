@@ -1,0 +1,57 @@
+// .loading {
+//   p {
+//     color: coral;
+//   }
+// }
+
+.loading {
+  .bouncing-loader {
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  //   .bouncing-loader {
+  //     font-weight: bold;
+  //     display: inline-block;
+  //     font-family: monospace;
+  //     font-size: 30px;
+  //     clip-path: inset(0 3ch 0 0);
+  //     animation: l 1s steps(4) infinite;
+  //   }
+  .bouncing-loader > div {
+    margin: 0.3rem;
+    animation: bouncing-loader 0.8s infinite alternate;
+    //alternate 하면 자연스럽게 내려갔다가 다시 시작.
+    //없으면 위로 뛰고 바로 아래로 원위치시킨 후 다시 시작
+  }
+  .bouncing-loader > div:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+
+  .bouncing-loader > div:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  .bouncing-loader > div:nth-child(4) {
+    animation-delay: 0.1s;
+  }
+
+  .bouncing-loader > div:nth-child(5) {
+    animation-delay: 0.2s;
+  }
+  .bouncing-loader > div:nth-child(6) {
+    animation-delay: 0.1s;
+  }
+
+  .bouncing-loader > div:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+}
+
+@keyframes bouncing-loader {
+  to {
+    transform: translateY(1rem);
+  }
+}

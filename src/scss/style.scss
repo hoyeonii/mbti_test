@@ -1,0 +1,36 @@
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  position: relative;
+  background-color: rgb(255, 238, 162);
+  height: 86vh;
+  padding: 7vh;
+  margin: auto 0;
+}
+.App > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+#mainBtn {
+  padding: 1rem;
+  background-color: coral;
+  border-radius: 0.3rem;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+
+  font-size: 1.2rem;
+}
