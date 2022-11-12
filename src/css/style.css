@@ -36,4 +36,17 @@ div {
   font-size: 1.2rem;
 }
 
+@media (max-width: 800px) {
+  .App {
+    height: 100vh;
+    padding: 0;
+  }
+  .App div {
+    width: 90vw;
+  }
+  #mainBtn {
+    font-size: 1rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

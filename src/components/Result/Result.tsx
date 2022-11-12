@@ -1,11 +1,13 @@
+// @ts-ignore
 import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import result from "../../content/result";
+
 function Result() {
-  let { mbti } = useParams();
+  let { mbti } = useParams<{mbti:string}>();
   const navigate = useNavigate();
   const info = result.find((el) => el.type === mbti);
-  console.log(info);
+
   return (
     <div className="result">
       {info ? (

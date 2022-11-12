@@ -1,9 +1,16 @@
 .result img {
   width: 25vw;
   margin: auto;
+  border-radius: 0.5rem;
 }
 .result .about {
   font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .result img {
+    width: 90vw;
+  }
 }
 
 /*# sourceMappingURL=result.css.map */

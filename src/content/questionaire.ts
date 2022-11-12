@@ -1,4 +1,7 @@
-const questionaire = [
+const questionaire: {
+  question: String;
+  option: { answer: string; value: string }[];
+}[] = [
   {
     question: "숙소에 파티가 열렸다.\n새로운 사람들도 있네?",
     option: [

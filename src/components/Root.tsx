@@ -15,7 +15,7 @@ function Root() {
     <div>
       <Router>
         <Routes>
-          <Route exact path="/" element={<Intro />} />
+          <Route path="/" element={<Intro />} />
           <Route path="/test" element={<Test />} />
           <Route path="/result/:mbti" element={<Result />} />
           {/* <Route path="/404" element={<NotFound />} /> */}

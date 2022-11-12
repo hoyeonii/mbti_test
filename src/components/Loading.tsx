@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import loading from "../image/loading.gif";
-function Loading({ result }) {
+function Loading({ result }: { result: string }) {
   const navigate = useNavigate();
   setTimeout(() => {
     navigate(`/result/${result}`);

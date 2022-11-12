@@ -8,3 +8,13 @@
     width: 70vw;
   }
 }
+@media (max-width: 800px) {
+  .intro {
+    img {
+      width: 90vw;
+    }
+    #mainBtn {
+      width: 90vw;
+    }
+  }
+}
